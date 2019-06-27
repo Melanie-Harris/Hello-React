@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Input from "./component/Input";
+
+import Image from "./component/MainImage/Image"
 
 
 const FunStatements= [
@@ -36,8 +37,8 @@ componentDidMount(){
 PopulateRandomStatementArray= () =>{
   const newVariable=[]
   newVariable[0] = GetRandomStatement()
-  newVariable[1] = GetRandomStatement()
-  newVariable[2] = GetRandomStatement()
+  // newVariable[1] = GetRandomStatement()
+  // newVariable[2] = GetRandomStatement()
 
   this.setState({
     RandomStatementArray: newVariable
@@ -48,24 +49,30 @@ PopulateRandomStatementArray= () =>{
   render() {
     return <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Image />
         
-        <Input textThatIShow={this.state.RandomStatementArray[0]} />
-        <Input textThatIShow={this.state.RandomStatementArray[1]} />
-        <Input textThatIShow={this.state.RandomStatementArray[2]} />
+        <br />
+        <Input 
+        type="text" 
+        textThatIShow={this.state.RandomStatementArray[0]} />
+        {/* <Input textThatIShow={this.state.RandomStatementArray[1]} />
+        <Input textThatIShow={this.state.RandomStatementArray[2]} /> */}
+        <br/>
         <button onClick={this.PopulateRandomStatementArray}>Click me for randomness</button>
 
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a open source project. Please see the link below to contribute to its completion. Please help me spread good vibes.
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="GitHub-link"
+          href="https://github.com/Melanie-Harris/Hello-React"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      >
+          <img className="GitHubLogo" src="https://www.shareicon.net/download/2015/09/03/95206_cat_512x512.png" alt="Smiley face" height="42" width="42" />
+        <br/> GitHub 
         </a>
+        
+       
       </header>
     </div>
   }

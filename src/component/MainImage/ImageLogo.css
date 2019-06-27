@@ -1,0 +1,32 @@
+/* Animations------------------------------------------------------- */
+
+/* spins images */
+
+.rotate {
+    animation: rotation 25s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* stops image from spinning */
+
+.rotate:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    background-color: pink;
+ border-radius: 20px;
+}
+
+.lotus:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    background-color: pink;
+    border-radius: 60px;
+}
