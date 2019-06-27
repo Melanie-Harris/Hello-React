@@ -21,8 +21,16 @@
   color: grey;
 }
 
-input {
-  width: 700px;
-  height: 80px;
+textarea {
+  width: 750px;
+  height: 120px;
+  font-size: 19px;
+  
+}
+
+.button{
+  width: 20%;
   font-size: 16px;
+  border-radius: 30px;
+  border:2px solid #c2c2b4;
 }
