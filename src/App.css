@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: #d9e3da;
+  width: auto;
+  /* margin-left: 10%; */
   /* background-color: #Ecc9c7; */
   /* background-color: #D1cfc0; */
   /* background-color: #f3dcd4; */
@@ -22,10 +24,16 @@
 }
 
 textarea {
-  width: 750px;
+  width: 700px;
   height: 120px;
   font-size: 19px;
+  padding: 3%;
+  /* width: auto; */
   
+}
+
+p{
+  width:80%;
 }
 
 .button{

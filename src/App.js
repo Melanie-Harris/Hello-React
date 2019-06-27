@@ -56,11 +56,12 @@ PopulateRandomStatementArray= () =>{
   render() {
     return <div className="App">
       <header className="App-header">
+<h1>Motivational Quote Generator</h1>
+        <br/>
         <Image />
         
         <br />
         <Input 
-        max="0"
         textThatIShow={this.state.RandomStatementArray[0]} />
         {/* for multiple input fields to display---------- */}
         {/* <Input textThatIShow={this.state.RandomStatementArray[1]} />
@@ -69,7 +70,7 @@ PopulateRandomStatementArray= () =>{
         <button className="button" onClick={this.PopulateRandomStatementArray}>Next Quote  </button>
 
         <p>
-          This is a open source project. Please see the link below to contribute to its completion. Please help me spread good vibes.
+          This is an open sourced project written in Reactjs. Please see the link below to contribute to its completion. Please help me spread good vibes.
         </p>
         <a
           className="GitHub-link"
@@ -79,6 +80,7 @@ PopulateRandomStatementArray= () =>{
           <img className="GitHubLogo" src="https://www.shareicon.net/download/2015/09/03/95206_cat_512x512.png" alt="Smiley face" height="42" width="42" />
         <br/> GitHub 
         </a>
+        <span>Creator: Melanie Harris</span>
         
        
       </header>
