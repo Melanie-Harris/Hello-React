@@ -5,7 +5,7 @@ import Input from "./component/Input";
 import Image from "./component/MainImage/Image"
 
 
-const FunStatements= [
+const FunStatements = [
   "Live as if you will die tomorrow, learn as if you will live forever... -Ghandi",
 
   "We make a living by what we get, but we make a life by what we give... - Winston Churchill",
@@ -22,67 +22,68 @@ const FunStatements= [
 ]
 
 function GetRandomNumber() {
-    return Math.floor(Math.random() * 6) + 1
+  return Math.floor(Math.random() * 6) + 1
 }
 
 
-function GetRandomStatement(){
+function GetRandomStatement() {
   const RandomNumber = GetRandomNumber()
   return FunStatements[RandomNumber]
 }
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={RandomStatementArray: []}
+    this.state = { RandomStatementArray: [] }
   }
-componentDidMount(){
-  this.PopulateRandomStatementArray()
-}
+  componentDidMount() {
+    this.PopulateRandomStatementArray()
+  }
 
-PopulateRandomStatementArray= () =>{
-  const newVariable=[]
-  newVariable[0] = GetRandomStatement()
-  // newVariable[1] = GetRandomStatement()
-  // newVariable[2] = GetRandomStatement()
+  PopulateRandomStatementArray = () => {
+    const newVariable = []
+    newVariable[0] = GetRandomStatement()
+    // newVariable[1] = GetRandomStatement()
+    // newVariable[2] = GetRandomStatement()
 
-  this.setState({
-    RandomStatementArray: newVariable
-  })
+    this.setState({
+      RandomStatementArray: newVariable
+    })
 
-}
+  }
 
 
   render() {
     return <div className="App">
       <header className="App-header">
-<h1>Motivational Quote Generator</h1>
-        <br/>
-        <Image />
-        
+        <h1 className="title">Motivational Quote Generator</h1>
         <br />
-        <Input 
-        textThatIShow={this.state.RandomStatementArray[0]} />
+        <Image />
+
+        <br />
+        <Input
+          textThatIShow={this.state.RandomStatementArray[0]} />
         {/* for multiple input fields to display---------- */}
         {/* <Input textThatIShow={this.state.RandomStatementArray[1]} />
         <Input textThatIShow={this.state.RandomStatementArray[2]} /> */}
-        <br/>
+        <br />
         <button className="button" onClick={this.PopulateRandomStatementArray}>Next Quote  </button>
 
-        <p>
+        <p className="message">
           This is an open sourced project written in Reactjs. Please see the link below to contribute to its completion. Please help me spread good vibes.
         </p>
         <a
           className="GitHub-link"
           href="https://github.com/Melanie-Harris/Hello-React"
           target="_blank"
-      >
+        >
           <img className="GitHubLogo" src="https://www.shareicon.net/download/2015/09/03/95206_cat_512x512.png" alt="Smiley face" height="42" width="42" />
-        <br/> GitHub 
+          <br /> GitHub
         </a>
-        <span>Creator: Melanie Harris</span>
-        
-       
+        <br />
+        <span className="author">Creator: Melanie Harris</span>
+
+
       </header>
     </div>
   }
