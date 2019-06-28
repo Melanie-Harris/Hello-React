@@ -5,14 +5,14 @@ import "../../component/MainImage/ImageLogo.css";
 
 function Image() {
     return (
-        <div> 
-            <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" />
+        <div className="LotusFlowers"> 
+            {/* <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" /> */}
             <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" />
             
             <img src="https://image.flaticon.com/icons/svg/1855/1855845.svg" class="rotate" width="100" height="100" />
 
             <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" />
-            <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" />
+            {/* <img src="https://image.flaticon.com/icons/svg/1891/1891657.svg" class="lotus" width="100" height="100" /> */}
 
         </div>
         

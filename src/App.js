@@ -56,9 +56,12 @@ class App extends React.Component {
   render() {
     return <div className="App">
       <header className="App-header">
-        <h1 className="title">Motivational Quote Generator</h1>
+        
         <br />
-        <Image />
+        <p className="message">
+          Please help me spread good vibes. See the link below to contribute to the generator's updates. 
+        </p>
+        <h1 className="title">Motivational Quote Generator</h1>
 
         <br />
         <Input
@@ -67,11 +70,9 @@ class App extends React.Component {
         {/* <Input textThatIShow={this.state.RandomStatementArray[1]} />
         <Input textThatIShow={this.state.RandomStatementArray[2]} /> */}
         <br />
-        <button className="button" onClick={this.PopulateRandomStatementArray}>Next Quote  </button>
-
-        <p className="message">
-          This is an open sourced project written in Reactjs. Please see the link below to contribute to its completion. Please help me spread good vibes.
-        </p>
+        <Image />
+        <button className="button" onClick={this.PopulateRandomStatementArray}> <strong>Next Quote </strong> </button>
+        <br/>
         <a
           className="GitHub-link"
           href="https://github.com/Melanie-Harris/Hello-React"

@@ -21,7 +21,7 @@
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     background-color: pink;
- border-radius: 20px;
+    border-radius: 20px;
 }
 
 .lotus:hover {
@@ -29,4 +29,11 @@
     animation-play-state: paused;
     background-color: pink;
     border-radius: 60px;
+}
+
+.LotusFlowers {
+    margin-top: -3%;
+    width:1.5%;
+    display: flex;
+    justify-content: center;
 }
